@@ -10,11 +10,11 @@ class WidgetDrawer extends StatelessWidget {
             decoration: BoxDecoration(color: Colors.blueAccent),
             child: Column(
               children: [
-                CircleAvatar(radius: 40, backgroundColor: Colors.redAccent),
+                CircleAvatar(radius: 40, backgroundColor: Colors.pink),
                 Container(
                   margin: EdgeInsets.only(top: 16),
                   child: Text(
-                    "Android Coding",
+                    "Factura Electronica",
                     style: TextStyle(color: Colors.white, fontSize: 24),
                   ),
                 )
