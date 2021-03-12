@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:invoice/widgets/drawer.dart';
 
 class PageProductos extends StatefulWidget {
   @override
@@ -12,6 +13,7 @@ class _PageProductosState extends State<PageProductos> {
       appBar: AppBar(
         title: Text('Productos'),
       ),
+      drawer: WidgetDrawer(),
       body: Center(
         child: Text('Pagina Productos'),
       ),
