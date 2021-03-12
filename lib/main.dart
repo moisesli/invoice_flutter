@@ -6,7 +6,7 @@ void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {  
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -39,32 +39,37 @@ class _HomePageState extends State<HomePage> {
         child: ListView(
           children: [
             DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.blueAccent
-              ),
+              decoration: BoxDecoration(color: Colors.blueAccent),
               child: Column(
                 children: [
-                  CircleAvatar(
-                    radius: 40,
-                    backgroundColor: Colors.redAccent
-                  ),
+                  CircleAvatar(radius: 40, backgroundColor: Colors.redAccent),
                   Container(
                     margin: EdgeInsets.only(top: 16),
                     child: Text(
                       "Android Coding",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 24
-                      ),
+                      style: TextStyle(color: Colors.white, fontSize: 24),
                     ),
                   )
                 ],
               ),
             ),
-            MenuItem(titulo: 'Documentos', icono: Icons.home),
-            MenuItem(titulo: 'Productos', icono: Icons.settings),
-            MenuItem(titulo: 'Empresas', icono: Icons.article),
-            MenuItem(titulo: 'Clientes', icono: Icons.assessment_rounded)
+            MenuItem(
+              titulo: 'Documentos',
+              icono: Icons.home,
+              url: '/documentos',
+            ),
+            MenuItem(
+                titulo: 'Productos', icono: Icons.settings, url: '/productos'),
+            MenuItem(
+              titulo: 'Empresas',
+              icono: Icons.article,
+              url: '/empresas',
+            ),
+            MenuItem(
+              titulo: 'Clientes',
+              icono: Icons.assessment_rounded,
+              url: '/clientes',
+            )
           ],
         ),
       ),
@@ -73,10 +78,15 @@ class _HomePageState extends State<HomePage> {
 }
 
 class MenuItem extends StatelessWidget {
-  final String titulo;  
+  final String titulo;
+  final String url;
   final IconData icono;
+
   const MenuItem({
-    Key key, this.titulo, this.icono,
+    Key key,
+    this.titulo,
+    this.icono,
+    this.url,
   }) : super(key: key);
 
   @override
