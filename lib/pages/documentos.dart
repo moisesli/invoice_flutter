@@ -53,15 +53,31 @@ class _PageDocumentosState extends State<PageDocumentos> {
                           style: TextStyle(fontSize: 28),
                         ),
                       ),
-                      title: Text(snapshot.data[index]['serie'] +
-                          '-' +
-                          snapshot.data[index]['numero'] +
-                          ' | ' +
-                          snapshot.data[index]['fecha']
+                      title: Row(
+                        children: [
+                          Text(snapshot.data[index]['serie'] +
+                      '-' +
+                      snapshot.data[index]['numero']),
+                          Text(' S/ ' + snapshot.data[index]['price'],
+                            style: TextStyle(fontSize: 14, color: Colors.grey),
+                          )
+                        ],
                       ),
-                      subtitle: Text(snapshot.data[index]['razon']),
+                      subtitle: Wrap(
+                        children: [
+                          Text(snapshot.data[index]['razon']),
+                          Text(
+                            'No enviado | ' +
+                            snapshot.data[index]['fecha'],
+                            style: TextStyle(fontSize: 13, color: Colors.grey),
+                          ),
+                        ],
+                      ),
                       trailing: Icon(Icons.more_vert),
                       isThreeLine: true,
+                      onTap: () {
+                        Navigator.pushNamed(context, '/detail_document');
+                      },
                     ),
                   );
                 },

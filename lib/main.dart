@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:invoice/pages/clientes.dart';
+import 'package:invoice/pages/detail_document.dart';
 import 'package:invoice/pages/documentos.dart';
 import 'package:invoice/pages/empresas.dart';
 import 'package:invoice/pages/productos.dart';
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/documentos',
       routes: {
         '/documentos': (context) => PageDocumentos(),
+        '/detail_document': (context) => DetailDocument(),
         '/productos': (context) => PageProductos(),
         '/empresas': (context) => PageEmpresas(),
         '/clientes': (context) => PageClientes(),
