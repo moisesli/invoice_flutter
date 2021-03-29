@@ -88,5 +88,35 @@
     "razon": "Nombre de la Empresa Sociedad Anonima",
     "fecha": "11-03-2021",
     "estado": 0
+  },
+  {
+    "id": 2,
+    "serie": "ND02",
+    "numero": "12974",
+    "price": "9 346.78",
+    "documento": "205463789340",
+    "razon": "Nombre de la Empresa Sociedad Anonima",
+    "fecha": "11-03-2021",
+    "estado": 0
+  },
+  {
+    "id": 2,
+    "serie": "ND02",
+    "numero": "12974",
+    "price": "9 346.78",
+    "documento": "205463789340",
+    "razon": "Nombre de la Empresa Sociedad Anonima",
+    "fecha": "11-03-2021",
+    "estado": 0
+  },
+  {
+    "id": 2,
+    "serie": "ND02",
+    "numero": "12974",
+    "price": "9 346.78",
+    "documento": "205463789340",
+    "razon": "Nombre de la Empresa Sociedad Anonima",
+    "fecha": "11-03-2021",
+    "estado": 0
   }
 ]
