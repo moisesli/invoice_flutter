@@ -31,32 +31,64 @@ class _PageDocumentosState extends State<PageDocumentos>
     super.dispose();
   }
 
-  Widget buttonAdd() {
+  // Nota Debito
+  Widget buttonNotaDebito() {
     return Container(
       child: FloatingActionButton(
-        onPressed: () {},
-        tooltip: "Add",
-        child: Icon(Icons.add),
-      ),
+          heroTag: null,
+          onPressed: () {
+            Navigator.pushNamed(context, '/create_nota_debito');
+          },
+          tooltip: "Add",
+          child: CircleAvatar(
+            child: Text('D'),
+          )),
     );
   }
 
-  Widget buttonEdit() {
+  // Nota Credito
+  Widget buttonNotaCredito() {
     return Container(
       child: FloatingActionButton(
-        onPressed: () {},
+          heroTag: null,
+          onPressed: () {
+            Navigator.pushNamed(context, '/create_nota_credito');
+          },
+          tooltip: "Add",
+          child: CircleAvatar(
+            child: Text('N'),
+          )),
+    );
+  }
+
+  // Boleta
+  Widget buttonBoleta() {
+    return Container(
+      child: FloatingActionButton(
+        heroTag: null,
+        onPressed: () {
+          Navigator.pushNamed(context, '/create_boleta');
+        },
         tooltip: "Edit",
-        child: Icon(Icons.edit),
+        child: CircleAvatar(
+          child: Text('B'),
+        ),
       ),
     );
   }
 
-  Widget buttonDelete() {
+  // Factura
+  Widget buttonFactura() {
     return Container(
       child: FloatingActionButton(
-        onPressed: () {},
+        heroTag: null,
+        onPressed: () {
+          Navigator.pushNamed(context, '/create_factura');
+        },
         tooltip: "Delete",
-        child: Icon(Icons.delete),
+        child: CircleAvatar(
+          child: Text('F'),
+        ),
       ),
     );
   }
@@ -64,11 +96,12 @@ class _PageDocumentosState extends State<PageDocumentos>
   Widget buttonToogle() {
     return Container(
       child: FloatingActionButton(
+        heroTag: null,
         backgroundColor: _buttonColor.value,
         onPressed: animate,
         tooltip: "Toogle",
         child: AnimatedIcon(
-            icon: AnimatedIcons.menu_home, progress: _animationIcon),
+            icon: AnimatedIcons.add_event, progress: _animationIcon),
       ),
     );
   }
@@ -174,16 +207,20 @@ class _PageDocumentosState extends State<PageDocumentos>
           children: [
             Transform(
                 transform: Matrix4.translationValues(
+                    0.0, _translateButton.value * 4.0, 0.0),
+                child: buttonNotaDebito()),
+            Transform(
+                transform: Matrix4.translationValues(
                     0.0, _translateButton.value * 3.0, 0.0),
-                child: buttonAdd()),
+                child: buttonNotaCredito()),
             Transform(
                 transform: Matrix4.translationValues(
                     0.0, _translateButton.value * 2.0, 0.0),
-                child: buttonEdit()),
+                child: buttonBoleta()),
             Transform(
                 transform:
                     Matrix4.translationValues(0.0, _translateButton.value, 0.0),
-                child: buttonDelete()),
+                child: buttonFactura()),
             buttonToogle()
           ],
         ));
