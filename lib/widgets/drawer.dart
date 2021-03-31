@@ -21,6 +21,23 @@ class WidgetDrawer extends StatelessWidget {
               ],
             ),
           ),
+          ExpansionTile(
+            initiallyExpanded: true,
+            leading: Icon(Icons.file_copy),
+            title: Text('Documentos'),
+            children: [
+              ListTile(
+                leading: Icon(Icons.arrow_right),
+                title: Text('Nueva Factura'),
+                subtitle: Text('Electronica'),
+              ),
+              ListTile(
+                leading: Icon(Icons.arrow_right),
+                title: Text('Nueva Boleta'),
+                subtitle: Text('Electronica'),
+              )
+            ],
+          ),
           MenuItem(
             titulo: 'Documentos',
             icono: Icons.home,
@@ -43,7 +60,6 @@ class WidgetDrawer extends StatelessWidget {
     );
   }
 }
-
 
 class MenuItem extends StatelessWidget {
   final String titulo;
