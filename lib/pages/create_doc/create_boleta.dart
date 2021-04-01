@@ -1,5 +1,15 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:invoice/widgets/drawer.dart';
+
+var data;
+
+Future loadJson() async {
+  String data = await rootBundle.loadString('assets/json/productos.json');
+  return json.decode(data);
+}
+
 
 class CreateBoleta extends StatefulWidget {
   @override
