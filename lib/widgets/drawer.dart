@@ -6,19 +6,22 @@ class WidgetDrawer extends StatelessWidget {
     return Drawer(
       child: ListView(
         children: [
-          DrawerHeader(
-            decoration: BoxDecoration(color: Colors.blueAccent),
-            child: Column(
-              children: [
-                CircleAvatar(radius: 40, backgroundColor: Colors.pink),
-                Container(
-                  margin: EdgeInsets.only(top: 16),
-                  child: Text(
-                    "Factura Electronica",
-                    style: TextStyle(color: Colors.white, fontSize: 24),
-                  ),
-                )
-              ],
+          Container(
+            height: 160,
+            child: DrawerHeader(
+              decoration: BoxDecoration(color: Colors.blueAccent),
+              child: Column(
+                children: [
+                  CircleAvatar(radius: 40, backgroundColor: Colors.pink),
+                  Container(
+                    margin: EdgeInsets.only(top: 16),
+                    child: Text(
+                      "Factura Electronica",
+                      style: TextStyle(color: Colors.white, fontSize: 24),
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
           ExpansionTile(
@@ -27,21 +30,45 @@ class WidgetDrawer extends StatelessWidget {
             title: Text('Documentos'),
             children: [
               ListTile(
+                leading: Icon(Icons.arrow_right_outlined),
+                title: Text('Lista de Documentos'),
+                onTap: () {
+                  Navigator.pushNamed(context, '/documentos');
+                },
+              ),
+              ListTile(
                 leading: Icon(Icons.arrow_right),
                 title: Text('Nueva Factura'),
                 subtitle: Text('Electronica'),
+                onTap: () {
+                  Navigator.pushNamed(context, '/create_factura');
+                },
               ),
               ListTile(
                 leading: Icon(Icons.arrow_right),
                 title: Text('Nueva Boleta'),
                 subtitle: Text('Electronica'),
+                onTap: () {
+                  Navigator.pushNamed(context, '/create_boleta');
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.arrow_right),
+                title: Text('Nueva Nota de Credito'),
+                subtitle: Text('Electronica'),
+                onTap: () {
+                  Navigator.pushNamed(context, '/create_nota_credito');
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.arrow_right),
+                title: Text('Nueva Nota Debito'),
+                subtitle: Text('Electronica'),
+                onTap: () {
+                  Navigator.pushNamed(context, '/create_nota_debito');
+                },
               )
             ],
-          ),
-          MenuItem(
-            titulo: 'Documentos',
-            icono: Icons.home,
-            url: '/documentos',
           ),
           MenuItem(
               titulo: 'Productos', icono: Icons.settings, url: '/productos'),

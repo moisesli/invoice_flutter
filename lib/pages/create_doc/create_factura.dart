@@ -59,7 +59,7 @@ class _CreateFacturaState extends State<CreateFactura> {
                           style: TextStyle(fontSize: 28),
                         ),
                       ),
-                      title: Row(
+                      title: Wrap(
                         children: [Text('Arroz Costenio Graneadito 600 Gg')],
                       ),
                       subtitle: Text('S/ 45.56 X 200 und'),
@@ -74,7 +74,7 @@ class _CreateFacturaState extends State<CreateFactura> {
                           style: TextStyle(fontSize: 28),
                         ),
                       ),
-                      title: Row(
+                      title: Wrap(
                         children: [Text('Arroz Costenio Graneadito 600 Gg')],
                       ),
                       subtitle: Text('S/ 45.56 X 200 und'),
@@ -89,7 +89,7 @@ class _CreateFacturaState extends State<CreateFactura> {
                           style: TextStyle(fontSize: 28),
                         ),
                       ),
-                      title: Row(
+                      title: Wrap(
                         children: [Text('Arroz Costenio Graneadito 600 Gg')],
                       ),
                       subtitle: Text('S/ 45.56 X 200 und'),
@@ -104,7 +104,7 @@ class _CreateFacturaState extends State<CreateFactura> {
                           style: TextStyle(fontSize: 28),
                         ),
                       ),
-                      title: Row(
+                      title: Wrap(
                         children: [Text('Arroz Costenio Graneadito 600 Gg')],
                       ),
                       subtitle: Text('S/ 45.56 X 200 und'),
