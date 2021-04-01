@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         '/empresas': (context) => PageEmpresas(),
         '/clientes': (context) => PageClientes(),
         // Creacion de documentos
-        '/create_factura': (context) => CreateFactura(),
+        '/create_factura': (context) => CreateFactura(),        
         '/create_boleta': (context) => CreateBoleta(),
         '/create_nota_credito': (context) => CreateNotaCredito(),
         '/create_nota_debito': (context) => CreateNotaDebito(),

@@ -62,9 +62,7 @@ class _CreateFacturaState extends State<CreateFactura> {
                         ),
                       ),
                       title: Row(
-                        children: [
-                          Text('Arroz Costenio Graneadito 600 Gg')                          
-                        ],
+                        children: [Text('Arroz Costenio Graneadito 600 Gg')],
                       ),
                       subtitle: Text('S/ 45.56 X 200 und'),
                       trailing: Icon(Icons.delete),
@@ -79,9 +77,7 @@ class _CreateFacturaState extends State<CreateFactura> {
                         ),
                       ),
                       title: Row(
-                        children: [
-                          Text('Arroz Costenio Graneadito 600 Gg')
-                        ],
+                        children: [Text('Arroz Costenio Graneadito 600 Gg')],
                       ),
                       subtitle: Text('S/ 45.56 X 200 und'),
                       trailing: Icon(Icons.delete),
@@ -96,9 +92,7 @@ class _CreateFacturaState extends State<CreateFactura> {
                         ),
                       ),
                       title: Row(
-                        children: [
-                          Text('Arroz Costenio Graneadito 600 Gg')
-                        ],
+                        children: [Text('Arroz Costenio Graneadito 600 Gg')],
                       ),
                       subtitle: Text('S/ 45.56 X 200 und'),
                       trailing: Icon(Icons.delete),
@@ -113,9 +107,7 @@ class _CreateFacturaState extends State<CreateFactura> {
                         ),
                       ),
                       title: Row(
-                        children: [
-                          Text('Arroz Costenio Graneadito 600 Gg')
-                        ],
+                        children: [Text('Arroz Costenio Graneadito 600 Gg')],
                       ),
                       subtitle: Text('S/ 45.56 X 200 und'),
                       trailing: Icon(Icons.delete),
