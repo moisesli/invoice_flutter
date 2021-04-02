@@ -42,6 +42,12 @@ class _CreateBoletaState extends State<CreateBoleta> {
           },
         ),
         title: Text('Create Boleta'),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.search),
+            onPressed: () => showSearch(context: context, delegate: DataSearch()),
+          )
+        ],
       ),
       drawer: WidgetDrawer(),
       body: FutureBuilder(
@@ -64,7 +70,18 @@ class _CreateBoletaState extends State<CreateBoleta> {
                         Text(snapshot.data[index]['nombre'])
                       ],
                     ),
-                    subtitle: Text(snapshot.data[index]['unidad']),
+                    subtitle: Wrap(
+                      children: [
+                        Text(snapshot.data[index]['cantidad']),
+                        Text(snapshot.data[index]['unidad']),
+                        Text(' IGV '),
+                        Text(snapshot.data[index]['igv']),
+                      ],
+                    ),
+                    trailing: Text(
+                        'S/ ' + snapshot.data[index]['precio'],
+                      style: TextStyle( fontSize: 18),
+                    ),
                   ),
                 );
               },
@@ -74,4 +91,31 @@ class _CreateBoletaState extends State<CreateBoleta> {
       ),
     );
   }
+}
+
+class DataSearch extends SearchDelegate {
+  @override
+  List<Widget> buildActions(BuildContext context) {
+    // TODO: implement buildActions
+    throw UnimplementedError();
+  }
+
+  @override
+  Widget buildLeading(BuildContext context) {
+    // TODO: implement buildLeading
+    throw UnimplementedError();
+  }
+
+  @override
+  Widget buildResults(BuildContext context) {
+    // TODO: implement buildResults
+    throw UnimplementedError();
+  }
+
+  @override
+  Widget buildSuggestions(BuildContext context) {
+    // TODO: implement buildSuggestions
+    throw UnimplementedError();
+  }
+  
 }
