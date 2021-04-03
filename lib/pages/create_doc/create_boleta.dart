@@ -31,17 +31,18 @@ class _CreateBoletaState extends State<CreateBoleta> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Builder(
-          builder: (BuildContext context) {
-            return IconButton(
-              icon: const Icon(Icons.arrow_back),
-              onPressed: () {
-                Navigator.pop(context);
-              },
-            );
-          },
+        title: Row(
+          children: [
+            Text('Total  '),
+            Text('100.34'),
+            Text(
+              ' S/ ',
+              style: TextStyle(fontSize: 17),
+            ),
+            Text('seguir', style: TextStyle(fontSize: 18),),
+            Icon(Icons.skip_next)
+          ],
         ),
-        title: Text('Create Boleta'),
         actions: [
           IconButton(
             icon: Icon(Icons.search),
@@ -88,6 +89,9 @@ class _CreateBoletaState extends State<CreateBoleta> {
           }
         },
       ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+      ),
     );
   }
 }
@@ -121,9 +125,7 @@ class DataSearch extends SearchDelegate {
   Widget buildResults(BuildContext context) {
     // TODO: implement buildResults
     return Column(
-      children: [
-        Text('data')
-      ],
+      children: [Text('data')],
     );
   }
 
@@ -135,7 +137,9 @@ class DataSearch extends SearchDelegate {
     for (int i = 0; i < data.length; i++) {
       temporal.add(data[i]);
     }
-    temp = temporal.where((note) => note['nombre'].toLowerCase().contains(query)).toList();
+    temp = temporal
+        .where((note) => note['nombre'].toLowerCase().contains(query))
+        .toList();
     print(temp);
     return ListView.builder(
       itemCount: temp.length,
@@ -147,9 +151,7 @@ class DataSearch extends SearchDelegate {
               child: Text('P'),
             ),
             title: Text(temp[index]['nombre']),
-            onTap: () {
-
-            },
+            onTap: () {},
           ),
         );
       },

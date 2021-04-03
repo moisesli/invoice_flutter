@@ -9,23 +9,27 @@ class CreateNotaCredito extends StatefulWidget {
 class _CreateNotaCreditoState extends State<CreateNotaCredito> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        leading: Builder(
-          builder: (BuildContext context) {
-            return IconButton(
-              icon: const Icon(Icons.arrow_back),
-              onPressed: () {
-                Navigator.pop(context);
-              },
-            );
-          },
+    return DefaultTabController(
+      initialIndex: 1,
+      length: 3,
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text('Create Nota Credito'),
+          bottom: TabBar(
+            tabs: [
+              Tab(icon: Icon(Icons.list_alt_outlined), text: 'Productos',),
+              Tab(icon: Icon(Icons.supervised_user_circle), text: 'Cliente'),
+              Tab(icon: Icon(Icons.insert_drive_file), text: 'Documento',)
+            ],
+          ),
         ),
-        title: Text('Create Nota Credito'),
-      ),
-      drawer: WidgetDrawer(),
-      body: Center(
-        child: Text('Create Nota Credito'),
+        drawer: WidgetDrawer(),
+        body: Center(
+          child: Text('Create Nota Credito'),
+        ),
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.add),
+        ),
       ),
     );
   }
