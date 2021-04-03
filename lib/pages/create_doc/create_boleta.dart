@@ -45,7 +45,8 @@ class _CreateBoletaState extends State<CreateBoleta> {
         actions: [
           IconButton(
             icon: Icon(Icons.search),
-            onPressed: () => showSearch(context: context, delegate: DataSearch()),
+            onPressed: () =>
+                showSearch(context: context, delegate: DataSearch()),
           )
         ],
       ),
@@ -66,9 +67,7 @@ class _CreateBoletaState extends State<CreateBoleta> {
                       child: Text('P'),
                     ),
                     title: Wrap(
-                      children: [
-                        Text(snapshot.data[index]['nombre'])
-                      ],
+                      children: [Text(snapshot.data[index]['nombre'])],
                     ),
                     subtitle: Wrap(
                       children: [
@@ -79,8 +78,8 @@ class _CreateBoletaState extends State<CreateBoleta> {
                       ],
                     ),
                     trailing: Text(
-                        'S/ ' + snapshot.data[index]['precio'],
-                      style: TextStyle( fontSize: 18),
+                      'S/ ' + snapshot.data[index]['precio'],
+                      style: TextStyle(fontSize: 18),
                     ),
                   ),
                 );
@@ -97,25 +96,63 @@ class DataSearch extends SearchDelegate {
   @override
   List<Widget> buildActions(BuildContext context) {
     // TODO: implement buildActions
-    throw UnimplementedError();
+    return [
+      IconButton(
+        icon: Icon(Icons.clear),
+        onPressed: () {
+          query = '';
+        },
+      )
+    ];
   }
 
   @override
   Widget buildLeading(BuildContext context) {
     // TODO: implement buildLeading
-    throw UnimplementedError();
+    return IconButton(
+      icon: Icon(Icons.arrow_back),
+      onPressed: () {
+        close(context, null);
+      },
+    );
   }
 
   @override
   Widget buildResults(BuildContext context) {
     // TODO: implement buildResults
-    throw UnimplementedError();
+    return Column(
+      children: [
+        Text('data')
+      ],
+    );
   }
 
   @override
   Widget buildSuggestions(BuildContext context) {
     // TODO: implement buildSuggestions
-    throw UnimplementedError();
+    var temporal = new List();
+    var temp = new List();
+    for (int i = 0; i < data.length; i++) {
+      temporal.add(data[i]);
+    }
+    temp = temporal.where((note) => note['nombre'].toLowerCase().contains(query)).toList();
+    print(temp);
+    return ListView.builder(
+      itemCount: temp.length,
+      itemBuilder: (context, int index) {
+        return Card(
+          child: ListTile(
+            leading: CircleAvatar(
+              radius: 20,
+              child: Text('P'),
+            ),
+            title: Text(temp[index]['nombre']),
+            onTap: () {
+
+            },
+          ),
+        );
+      },
+    );
   }
-  
 }
