@@ -17,15 +17,25 @@ class _CreateNotaCreditoState extends State<CreateNotaCredito> {
           title: Text('Create Nota Credito'),
           bottom: TabBar(
             tabs: [
-              Tab(icon: Icon(Icons.list_alt_outlined), text: 'Productos',),
+              Tab(
+                icon: Icon(Icons.list_alt_outlined),
+                text: 'Productos',
+              ),
               Tab(icon: Icon(Icons.supervised_user_circle), text: 'Cliente'),
-              Tab(icon: Icon(Icons.insert_drive_file), text: 'Documento',)
+              Tab(
+                icon: Icon(Icons.insert_drive_file),
+                text: 'Documento',
+              )
             ],
           ),
         ),
         drawer: WidgetDrawer(),
-        body: Center(
-          child: Text('Create Nota Credito'),
+        body: TabBarView(
+          children: [
+            Icon(Icons.directions_car),
+            Icon(Icons.directions_transit),
+            Icon(Icons.directions_bike),
+          ],
         ),
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add),
