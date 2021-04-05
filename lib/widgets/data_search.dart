@@ -2,7 +2,9 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
 var data;
+
 Future loadJson() async {
   String data = await rootBundle.loadString('assets/json/productos.json');
   return json.decode(data);
@@ -57,15 +59,21 @@ class DataSearch extends SearchDelegate {
       itemCount: temp.length,
       itemBuilder: (context, int index) {
         return Card(
-          child: ListTile(
-            leading: CircleAvatar(
-              radius: 20,
-              child: Text('P'),
-            ),
-            title: Text(temp[index]['nombre']),
-            onTap: () {},
-          ),
-        );
+            child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              leading: CircleAvatar(
+                child: Image.asset(temp[index]['image']),
+              ),
+              title: Text(temp[index]['nombre']),
+              subtitle: Text('cantidad ' + temp[index]['cantidad']),
+              trailing: Text(temp[index]['precio']),
+              onTap: () {
+              },
+            )
+          ],
+        ));
       },
     );
   }

@@ -62,7 +62,7 @@ class _CreateNotaCreditoState extends State<CreateNotaCredito> {
                   ),
                   CardProduct(
                     image: 'img/azucar.jpg',
-                    title: 'Azucar Rubia Granizada ',
+                    title: 'Azucar Rubia Granizada',
                     subtitle: 'Cantidad 5 Kg',
                     price: 'S/ 18.00',
                   ),

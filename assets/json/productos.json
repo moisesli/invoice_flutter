@@ -2,7 +2,7 @@
   {
     "id": "1",
     "image": "img/aceite_primor.jpg",
-    "nombre": "Arroz Costenio graneadito 10 Kg",
+    "nombre": "Aceite Primor Grande Vegetal",
     "unidad": "Kg",
     "precio": "45.12",
     "igv": "12.89",
@@ -11,7 +11,7 @@
   {
     "id": "2",
     "image": "img/azucar.jpg",
-    "nombre": "Cafe Kirma 250 nuevo sabor",
+    "nombre": "Azucar Rubia Granizada",
     "unidad": "Kg",
     "precio": "45.12",
     "igv": "12.89",
@@ -20,7 +20,7 @@
   {
     "id": "3",
     "image": "img/cafe.jpg",
-    "nombre": "Arroz Costenio graneadito 10 Kg",
+    "nombre": "Cafe Kirma Negro Grano Entero",
     "unidad": "Kg",
     "precio": "45.12",
     "igv": "12.89",
@@ -29,7 +29,160 @@
   {
     "id": "4",
     "image": "img/costeno1.jpg",
-    "nombre": "Arroz Costenio graneadito 10 Kg",
+    "nombre": "Arroz Costeno Graneadito Seleccionado",
+    "unidad": "Kg",
+    "precio": "45.12",
+    "igv": "12.89",
+    "cantidad": "1"
+  },
+  {
+    "id": "4",
+    "image": "img/mayonesa.jpg",
+    "nombre": "Mayonesa Helman Sabor de Casa",
+    "unidad": "Kg",
+    "precio": "45.12",
+    "igv": "12.89",
+    "cantidad": "1"
+  },
+  {
+    "id": "4",
+    "image": "img/pollo.jpg",
+    "nombre": "Pechuga de Pollo Fileteada",
+    "unidad": "Kg",
+    "precio": "45.12",
+    "igv": "12.89",
+    "cantidad": "1"
+  },
+  {
+    "id": "4",
+    "image": "img/sal.jpg",
+    "nombre": "Sal Yodada fuerte",
+    "unidad": "Kg",
+    "precio": "45.12",
+    "igv": "12.89",
+    "cantidad": "1"
+  },
+  {
+    "id": "1",
+    "image": "img/aceite_primor.jpg",
+    "nombre": "Aceite Primor Grande Vegetal",
+    "unidad": "Kg",
+    "precio": "45.12",
+    "igv": "12.89",
+    "cantidad": "1"
+  },
+  {
+    "id": "2",
+    "image": "img/azucar.jpg",
+    "nombre": "Azucar Rubia Granizada",
+    "unidad": "Kg",
+    "precio": "45.12",
+    "igv": "12.89",
+    "cantidad": "1"
+  },
+  {
+    "id": "3",
+    "image": "img/cafe.jpg",
+    "nombre": "Cafe Kirma Negro Grano Entero",
+    "unidad": "Kg",
+    "precio": "45.12",
+    "igv": "12.89",
+    "cantidad": "1"
+  },
+  {
+    "id": "4",
+    "image": "img/costeno1.jpg",
+    "nombre": "Arroz Costeno Graneadito Seleccionado",
+    "unidad": "Kg",
+    "precio": "45.12",
+    "igv": "12.89",
+    "cantidad": "1"
+  },
+  {
+    "id": "4",
+    "image": "img/mayonesa.jpg",
+    "nombre": "Mayonesa Helman Sabor de Casa",
+    "unidad": "Kg",
+    "precio": "45.12",
+    "igv": "12.89",
+    "cantidad": "1"
+  },
+  {
+    "id": "4",
+    "image": "img/pollo.jpg",
+    "nombre": "Pechuga de Pollo Fileteada",
+    "unidad": "Kg",
+    "precio": "45.12",
+    "igv": "12.89",
+    "cantidad": "1"
+  },
+  {
+    "id": "4",
+    "image": "img/sal.jpg",
+    "nombre": "Sal Yodada fuerte",
+    "unidad": "Kg",
+    "precio": "45.12",
+    "igv": "12.89",
+    "cantidad": "1"
+  },
+  {
+    "id": "1",
+    "image": "img/aceite_primor.jpg",
+    "nombre": "Aceite Primor Grande Vegetal",
+    "unidad": "Kg",
+    "precio": "45.12",
+    "igv": "12.89",
+    "cantidad": "1"
+  },
+  {
+    "id": "2",
+    "image": "img/azucar.jpg",
+    "nombre": "Azucar Rubia Granizada",
+    "unidad": "Kg",
+    "precio": "45.12",
+    "igv": "12.89",
+    "cantidad": "1"
+  },
+  {
+    "id": "3",
+    "image": "img/cafe.jpg",
+    "nombre": "Cafe Kirma Negro Grano Entero",
+    "unidad": "Kg",
+    "precio": "45.12",
+    "igv": "12.89",
+    "cantidad": "1"
+  },
+  {
+    "id": "4",
+    "image": "img/costeno1.jpg",
+    "nombre": "Arroz Costeno Graneadito Seleccionado",
+    "unidad": "Kg",
+    "precio": "45.12",
+    "igv": "12.89",
+    "cantidad": "1"
+  },
+  {
+    "id": "4",
+    "image": "img/mayonesa.jpg",
+    "nombre": "Mayonesa Helman Sabor de Casa",
+    "unidad": "Kg",
+    "precio": "45.12",
+    "igv": "12.89",
+    "cantidad": "1"
+  },
+  {
+    "id": "4",
+    "image": "img/pollo.jpg",
+    "nombre": "Pechuga de Pollo Fileteada",
+    "unidad": "Kg",
+    "precio": "45.12",
+    "igv": "12.89",
+    "cantidad": "1"
+  },
+  {
+    "id": "4",
+    "image": "img/sal.jpg",
+    "nombre": "Sal Yodada fuerte",
     "unidad": "Kg",
     "precio": "45.12",
     "igv": "12.89",
