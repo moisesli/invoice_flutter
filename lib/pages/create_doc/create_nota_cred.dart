@@ -54,53 +54,131 @@ class _CreateNotaCreditoState extends State<CreateNotaCredito> {
             Container(
               child: ListView(
                 children: [
-                  Card(
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        ListTile(
-                          leading: CircleAvatar(
-                            child: Image.asset('img/aceite_primor.jpg'),
-                          ),
-                          title: Text('Aceite Primor Vegetal Limpio'),
-                          subtitle: Wrap(
-                            children: [
-                              Text('Cantidad 1 Kg '),
-                            ],
-                          ),
-                          trailing: Text(
-                            'S/ 1 534.68',
-                            style:
-                                TextStyle(fontSize: 17, color: Colors.black87),
-                          ),
-                          onTap: () {},
-                        ),
-                      ],
-                    ),
+                  CardProduct(
+                    image: 'img/aceite_primor.jpg',
+                    title: 'Aceite Primor Grande Vegetal',
+                    subtitle: 'Cantidad 5000 ml',
+                    price: 'S/ 7.50',
                   ),
-                  Card(
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        ListTile(
-                          leading: CircleAvatar(
-                            child: Image.asset('img/costeno1.jpg'),
-                          ),
-                          title: Text('Arroz Costeno Graneadito Casero'),
-                          subtitle: Wrap(
-                            children: [
-                              Text('Cantidad 5 UND '),
-                            ],
-                          ),
-                          trailing: Text(
-                            'S/ 34 124.43',
-                            style:
-                            TextStyle(fontSize: 17, color: Colors.black87),
-                          ),
-                          onTap: () {},
-                        ),
-                      ],
-                    ),
+                  CardProduct(
+                    image: 'img/azucar.jpg',
+                    title: 'Azucar Rubia Granizada ',
+                    subtitle: 'Cantidad 5 Kg',
+                    price: 'S/ 18.00',
+                  ),
+                  CardProduct(
+                    image: 'img/cafe.jpg',
+                    title: 'Cafe Kirma Negro Grano Entero',
+                    subtitle: 'Cantidad 500 gr',
+                    price: 'S/ 6.70',
+                  ),
+                  CardProduct(
+                    image: 'img/costeno1.jpg',
+                    title: 'Arroz Costeno Graneadito Seleccionado',
+                    subtitle: 'Cantidad 5 Kg',
+                    price: 'S/ 23.45',
+                  ),
+                  CardProduct(
+                    image: 'img/mayonesa.jpg',
+                    title: 'Mayonesa Helman Sabor de Casa',
+                    subtitle: 'Peso 400 gr',
+                    price: 'S/ 8.00',
+                  ),
+                  CardProduct(
+                    image: 'img/pollo.jpg',
+                    title: 'Pechuga de Pollo Fileteada',
+                    subtitle: 'Cantidad 3 Kg',
+                    price: 'S/ 35.00',
+                  ),
+                  CardProduct(
+                    image: 'img/sal.jpg',
+                    title: 'Sal Yodada fuerte',
+                    subtitle: 'Cantidad 1 Kg',
+                    price: 'S/ 3.50',
+                  ),
+                  CardProduct(
+                    image: 'img/aceite_primor.jpg',
+                    title: 'Aceite Primor Grande Vegetal',
+                    subtitle: 'Cantidad 5000 ml',
+                    price: 'S/ 7.50',
+                  ),
+                  CardProduct(
+                    image: 'img/azucar.jpg',
+                    title: 'Azucar Rubia Granizada ',
+                    subtitle: 'Cantidad 5 Kg',
+                    price: 'S/ 18.00',
+                  ),
+                  CardProduct(
+                    image: 'img/cafe.jpg',
+                    title: 'Cafe Kirma Negro Grano Entero',
+                    subtitle: 'Cantidad 500 gr',
+                    price: 'S/ 6.70',
+                  ),
+                  CardProduct(
+                    image: 'img/costeno1.jpg',
+                    title: 'Arroz Costeno Graneadito Seleccionado',
+                    subtitle: 'Cantidad 5 Kg',
+                    price: 'S/ 23.45',
+                  ),
+                  CardProduct(
+                    image: 'img/mayonesa.jpg',
+                    title: 'Mayonesa Helman Sabor de Casa',
+                    subtitle: 'Peso 400 gr',
+                    price: 'S/ 8.00',
+                  ),
+                  CardProduct(
+                    image: 'img/pollo.jpg',
+                    title: 'Pechuga de Pollo Fileteada',
+                    subtitle: 'Cantidad 3 Kg',
+                    price: 'S/ 35.00',
+                  ),
+                  CardProduct(
+                    image: 'img/sal.jpg',
+                    title: 'Sal Yodada fuerte',
+                    subtitle: 'Cantidad 1 Kg',
+                    price: 'S/ 3.50',
+                  ),
+                  CardProduct(
+                    image: 'img/aceite_primor.jpg',
+                    title: 'Aceite Primor Grande Vegetal',
+                    subtitle: 'Cantidad 5000 ml',
+                    price: 'S/ 7.50',
+                  ),
+                  CardProduct(
+                    image: 'img/azucar.jpg',
+                    title: 'Azucar Rubia Granizada ',
+                    subtitle: 'Cantidad 5 Kg',
+                    price: 'S/ 18.00',
+                  ),
+                  CardProduct(
+                    image: 'img/cafe.jpg',
+                    title: 'Cafe Kirma Negro Grano Entero',
+                    subtitle: 'Cantidad 500 gr',
+                    price: 'S/ 6.70',
+                  ),
+                  CardProduct(
+                    image: 'img/costeno1.jpg',
+                    title: 'Arroz Costeno Graneadito Seleccionado',
+                    subtitle: 'Cantidad 5 Kg',
+                    price: 'S/ 23.45',
+                  ),
+                  CardProduct(
+                    image: 'img/mayonesa.jpg',
+                    title: 'Mayonesa Helman Sabor de Casa',
+                    subtitle: 'Peso 400 gr',
+                    price: 'S/ 8.00',
+                  ),
+                  CardProduct(
+                    image: 'img/pollo.jpg',
+                    title: 'Pechuga de Pollo Fileteada',
+                    subtitle: 'Cantidad 3 Kg',
+                    price: 'S/ 35.00',
+                  ),
+                  CardProduct(
+                    image: 'img/sal.jpg',
+                    title: 'Sal Yodada fuerte',
+                    subtitle: 'Cantidad 1 Kg',
+                    price: 'S/ 3.50',
                   ),
                 ],
               ),
@@ -109,6 +187,44 @@ class _CreateNotaCreditoState extends State<CreateNotaCredito> {
             Icon(Icons.directions_bike),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class CardProduct extends StatelessWidget {
+  final String image;
+  final String title;
+  final String subtitle;
+  final String price;
+
+  const CardProduct(
+      {Key key, this.image, this.title, this.subtitle, this.price})
+      : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          ListTile(
+            leading: CircleAvatar(
+              child: Image.asset(this.image),
+            ),
+            title: Text(this.title),
+            subtitle: Wrap(
+              children: [
+                Text(this.subtitle),
+              ],
+            ),
+            trailing: Text(
+              this.price,
+              style: TextStyle(fontSize: 17, color: Colors.black87),
+            ),
+            onTap: () {},
+          ),
+        ],
       ),
     );
   }

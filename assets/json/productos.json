@@ -1,6 +1,7 @@
 [
   {
     "id": "1",
+    "image": "img/aceite_primor.jpg",
     "nombre": "Arroz Costenio graneadito 10 Kg",
     "unidad": "Kg",
     "precio": "45.12",
@@ -9,6 +10,7 @@
   },
   {
     "id": "2",
+    "image": "img/azucar.jpg",
     "nombre": "Cafe Kirma 250 nuevo sabor",
     "unidad": "Kg",
     "precio": "45.12",
@@ -17,6 +19,7 @@
   },
   {
     "id": "3",
+    "image": "img/cafe.jpg",
     "nombre": "Arroz Costenio graneadito 10 Kg",
     "unidad": "Kg",
     "precio": "45.12",
@@ -25,111 +28,8 @@
   },
   {
     "id": "4",
+    "image": "img/costeno1.jpg",
     "nombre": "Arroz Costenio graneadito 10 Kg",
-    "unidad": "Kg",
-    "precio": "45.12",
-    "igv": "12.89",
-    "cantidad": "1"
-  },
-  {
-    "id": "1",
-    "nombre": "Arroz Costenio graneadito 10 Kg",
-    "unidad": "Kg",
-    "precio": "45.12",
-    "igv": "12.89",
-    "cantidad": "1"
-  },
-  {
-    "id": "2",
-    "nombre": "Arroz Costenio graneadito 10 Kg",
-    "unidad": "Kg",
-    "precio": "45.12",
-    "igv": "12.89",
-    "cantidad": "1"
-  },
-  {
-    "id": "3",
-    "nombre": "Arroz Costenio graneadito 10 Kg",
-    "unidad": "Kg",
-    "precio": "45.12",
-    "igv": "12.89",
-    "cantidad": "1"
-  },
-  {
-    "id": "4",
-    "nombre": "Arroz Costenio graneadito 10 Kg",
-    "unidad": "Kg",
-    "precio": "45.12",
-    "igv": "12.89",
-    "cantidad": "1"
-  },
-  {
-    "id": "1",
-    "nombre": "Arroz Costenio graneadito 10 Kg",
-    "unidad": "Kg",
-    "precio": "45.12",
-    "igv": "12.89",
-    "cantidad": "1"
-  },
-  {
-    "id": "2",
-    "nombre": "Arroz Costenio graneadito 10 Kg",
-    "unidad": "Kg",
-    "precio": "45.12",
-    "igv": "12.89",
-    "cantidad": "1"
-  },
-  {
-    "id": "3",
-    "nombre": "Arroz Costenio graneadito 10 Kg",
-    "unidad": "Kg",
-    "precio": "45.12",
-    "igv": "12.89",
-    "cantidad": "1"
-  },
-  {
-    "id": "3",
-    "nombre": "Arroz Costenio graneadito 10 Kg",
-    "unidad": "Kg",
-    "precio": "45.12",
-    "igv": "12.89",
-    "cantidad": "1"
-  },
-  {
-    "id": "3",
-    "nombre": "Arroz Costenio graneadito 10 Kg",
-    "unidad": "Kg",
-    "precio": "45.12",
-    "igv": "12.89",
-    "cantidad": "1"
-  },
-  {
-    "id": "3",
-    "nombre": "Arroz Costenio graneadito 10 Kg",
-    "unidad": "Kg",
-    "precio": "45.12",
-    "igv": "12.89",
-    "cantidad": "1"
-  },
-  {
-    "id": "3",
-    "nombre": "Arroz Costenio graneadito 10 Kg",
-    "unidad": "Kg",
-    "precio": "45.12",
-    "igv": "12.89",
-    "cantidad": "1"
-  },
-  {
-    "id": "3",
-    "nombre": "Arroz Costenio graneadito 10 Kg",
-    "unidad": "Kg",
-    "precio": "45.12",
-    "igv": "12.89",
-    "cantidad": "1"
-  },
-  {
-    "id": "3",
-    "nombre": "Arroz Costenio graneadito 1Ò0 Kg",
     "unidad": "Kg",
     "precio": "45.12",
     "igv": "12.89",
